@@ -33,17 +33,13 @@ IIC(MASTER AND SLAVE)
 - IIC
   - 主机
   ```C
-  GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_7;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    PB6     ------> I2C1_SCL
+    PB7     ------> I2C1_SDA
   ```
   - 从机
   ```C
-  GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_11;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    PB10     ------> I2C2_SCL
+    PB11     ------> I2C2_SDA
   ```
 ## CubeMx配置
 ![Alt text](image.png)
