@@ -14,19 +14,39 @@ Mcu.IP1=I2C2
 Mcu.IP2=NVIC
 Mcu.IP3=RCC
 Mcu.IP4=SYS
+<<<<<<< HEAD
+Mcu.IP5=TIM1
+Mcu.IP6=TIM2
+Mcu.IPNb=7
+=======
 Mcu.IPNb=5
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 Mcu.Name=STM32F103C(8-B)Tx
 Mcu.Package=LQFP48
 Mcu.Pin0=PD0-OSC_IN
 Mcu.Pin1=PD1-OSC_OUT
+<<<<<<< HEAD
+Mcu.Pin10=VP_SYS_VS_Systick
+Mcu.Pin11=VP_TIM1_VS_ClockSourceINT
+Mcu.Pin12=VP_TIM2_VS_ClockSourceINT
+=======
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 Mcu.Pin2=PB10
 Mcu.Pin3=PB11
 Mcu.Pin4=PA13
 Mcu.Pin5=PA14
+<<<<<<< HEAD
+Mcu.Pin6=PB4
+Mcu.Pin7=PB5
+Mcu.Pin8=PB6
+Mcu.Pin9=PB7
+Mcu.PinsNb=13
+=======
 Mcu.Pin6=PB6
 Mcu.Pin7=PB7
 Mcu.Pin8=VP_SYS_VS_Systick
 Mcu.PinsNb=9
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 Mcu.ThirdPartyNb=0
 Mcu.UserConstants=
 Mcu.UserName=STM32F103C8Tx
@@ -34,18 +54,37 @@ MxCube.Version=6.9.1
 MxDb.Version=DB.6.0.91
 NVIC.BusFault_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.DebugMonitor_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
+<<<<<<< HEAD
+NVIC.EXTI4_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+NVIC.EXTI9_5_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+NVIC.ForceEnableDMAVector=true
+NVIC.HardFault_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
+NVIC.I2C1_ER_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+NVIC.I2C1_EV_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+NVIC.I2C2_ER_IRQn=true\:1\:0\:true\:false\:true\:true\:true\:true
+NVIC.I2C2_EV_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+=======
 NVIC.ForceEnableDMAVector=true
 NVIC.HardFault_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.I2C1_ER_IRQn=true\:0\:0\:false\:false\:true\:true\:true\:true
 NVIC.I2C1_EV_IRQn=true\:0\:0\:false\:false\:true\:true\:true\:true
 NVIC.I2C2_ER_IRQn=true\:0\:0\:false\:false\:true\:true\:true\:true
 NVIC.I2C2_EV_IRQn=true\:0\:0\:false\:false\:true\:true\:true\:true
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 NVIC.MemoryManagement_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.NonMaskableInt_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.PendSV_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.PriorityGroup=NVIC_PRIORITYGROUP_4
 NVIC.SVCall_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.SysTick_IRQn=true\:15\:0\:false\:false\:true\:false\:true\:false
+<<<<<<< HEAD
+NVIC.TIM1_BRK_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+NVIC.TIM1_CC_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+NVIC.TIM1_TRG_COM_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+NVIC.TIM1_UP_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+NVIC.TIM2_IRQn=true\:0\:0\:true\:false\:true\:true\:true\:true
+=======
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 NVIC.UsageFault_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 PA13.Mode=Serial_Wire
 PA13.Signal=SYS_JTMS-SWDIO
@@ -55,6 +94,19 @@ PB10.Mode=I2C
 PB10.Signal=I2C2_SCL
 PB11.Mode=I2C
 PB11.Signal=I2C2_SDA
+<<<<<<< HEAD
+PB4.GPIOParameters=GPIO_PuPd,GPIO_ModeDefaultEXTI
+PB4.GPIO_ModeDefaultEXTI=GPIO_MODE_IT_FALLING
+PB4.GPIO_PuPd=GPIO_PULLUP
+PB4.Locked=true
+PB4.Signal=GPXTI4
+PB5.GPIOParameters=GPIO_PuPd,GPIO_ModeDefaultEXTI
+PB5.GPIO_ModeDefaultEXTI=GPIO_MODE_IT_FALLING
+PB5.GPIO_PuPd=GPIO_PULLUP
+PB5.Locked=true
+PB5.Signal=GPXTI5
+=======
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 PB6.Mode=I2C
 PB6.Signal=I2C1_SCL
 PB7.Mode=I2C
@@ -79,7 +131,11 @@ ProjectManager.HalAssertFull=false
 ProjectManager.HeapSize=0x200
 ProjectManager.KeepUserCode=true
 ProjectManager.LastFirmware=true
+<<<<<<< HEAD
+ProjectManager.LibraryCopy=1
+=======
 ProjectManager.LibraryCopy=0
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 ProjectManager.MainLocation=Core/Src
 ProjectManager.NoMain=false
 ProjectManager.PreviousToolchain=
@@ -94,7 +150,11 @@ ProjectManager.ToolChainLocation=
 ProjectManager.UAScriptAfterPath=
 ProjectManager.UAScriptBeforePath=
 ProjectManager.UnderRoot=false
+<<<<<<< HEAD
+ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,2-MX_GPIO_Init-GPIO-false-HAL-true,3-MX_I2C1_Init-I2C1-false-HAL-true,4-MX_I2C2_Init-I2C2-false-HAL-true,5-MX_TIM1_Init-TIM1-false-HAL-true,6-MX_TIM2_Init-TIM2-false-HAL-true
+=======
 ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,2-MX_GPIO_Init-GPIO-false-HAL-true,3-MX_I2C1_Init-I2C1-false-HAL-true,4-MX_I2C2_Init-I2C2-false-HAL-true
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 RCC.ADCFreqValue=36000000
 RCC.AHBFreq_Value=72000000
 RCC.APB1CLKDivider=RCC_HCLK_DIV2
@@ -116,6 +176,27 @@ RCC.SYSCLKSource=RCC_SYSCLKSOURCE_PLLCLK
 RCC.TimSysFreq_Value=72000000
 RCC.USBFreq_Value=72000000
 RCC.VCOOutput2Freq_Value=8000000
+<<<<<<< HEAD
+SH.GPXTI4.0=GPIO_EXTI4
+SH.GPXTI4.ConfNb=1
+SH.GPXTI5.0=GPIO_EXTI5
+SH.GPXTI5.ConfNb=1
+TIM1.AutoReloadPreload=TIM_AUTORELOAD_PRELOAD_ENABLE
+TIM1.IPParameters=Prescaler,Period,AutoReloadPreload
+TIM1.Period=100-1
+TIM1.Prescaler=72-1
+TIM2.AutoReloadPreload=TIM_AUTORELOAD_PRELOAD_ENABLE
+TIM2.IPParameters=Prescaler,Period,AutoReloadPreload
+TIM2.Period=1000-1
+TIM2.Prescaler=72-1
 VP_SYS_VS_Systick.Mode=SysTick
 VP_SYS_VS_Systick.Signal=SYS_VS_Systick
+VP_TIM1_VS_ClockSourceINT.Mode=Internal
+VP_TIM1_VS_ClockSourceINT.Signal=TIM1_VS_ClockSourceINT
+VP_TIM2_VS_ClockSourceINT.Mode=Internal
+VP_TIM2_VS_ClockSourceINT.Signal=TIM2_VS_ClockSourceINT
+=======
+VP_SYS_VS_Systick.Mode=SysTick
+VP_SYS_VS_Systick.Signal=SYS_VS_Systick
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
 board=custom

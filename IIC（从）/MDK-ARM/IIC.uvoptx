@@ -117,6 +117,14 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+<<<<<<< HEAD
+          <Key>DLGUARM</Key>
+          <Name>怎??</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+=======
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
           <Key>ARMRTXEVENTFLAGS</Key>
           <Name>-L70 -Z18 -C0 -M0 -T1</Name>
         </SetRegEntry>
@@ -133,7 +141,11 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>JL2CM3</Key>
+<<<<<<< HEAD
+          <Name>-U20090929 -O78 -S2 -ZTIFSpeedSel5000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO7 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_128.FLM -FS08000000 -FL020000 -FP0($$Device:STM32F103C8$Flash\STM32F10x_128.FLM)</Name>
+=======
           <Name>-U20090929 -O78 -S2 -ZTIFSpeedSel5000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(1BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO7 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_128.FLM -FS08000000 -FL020000 -FP0($$Device:STM32F103C8$Flash\STM32F10x_128.FLM)</Name>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -151,27 +163,67 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
+<<<<<<< HEAD
+          <ItemText>shoot_flag,0x0A</ItemText>
+=======
           <ItemText>I2C_sendBuf,0x0A</ItemText>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
+<<<<<<< HEAD
+          <ItemText>shoot_turns,0x0A</ItemText>
+=======
           <ItemText>I2C_recvBuf</ItemText>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
+<<<<<<< HEAD
+          <ItemText>fly_time,0x0A</ItemText>
+=======
           <ItemText>I2C_recvBuf2</ItemText>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
+<<<<<<< HEAD
+          <ItemText>average_speed</ItemText>
+=======
           <ItemText>rx_flag</ItemText>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
+<<<<<<< HEAD
+          <ItemText>range_speed</ItemText>
+        </Ww>
+        <Ww>
+          <count>5</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>bullet,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>6</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>round_flag,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>speed_bfeore</ItemText>
+        </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>speed_after</ItemText>
+=======
           <ItemText>hi2c2,0x0A</ItemText>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
         </Ww>
       </WatchWindow1>
       <Tracepoint>
@@ -212,6 +264,13 @@
       <pszMrule></pszMrule>
       <pSingCmds></pSingCmds>
       <pMultCmds></pMultCmds>
+<<<<<<< HEAD
+      <pMisraNamep></pMisraNamep>
+      <pszMrulep></pszMrulep>
+      <pSingCmdsp></pSingCmdsp>
+      <pMultCmdsp></pMultCmdsp>
+=======
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <DebugDescription>
         <Enable>1</Enable>
         <EnableLog>0</EnableLog>
@@ -290,6 +349,21 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
+<<<<<<< HEAD
+      <PathWithFileName>../Core/Src/tim.c</PathWithFileName>
+      <FilenameWithoutPath>tim.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>6</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+=======
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <PathWithFileName>../Core/Src/stm32f1xx_it.c</PathWithFileName>
       <FilenameWithoutPath>stm32f1xx_it.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -297,7 +371,11 @@
     </File>
     <File>
       <GroupNumber>2</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>7</FileNumber>
+=======
       <FileNumber>6</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -317,7 +395,11 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>8</FileNumber>
+=======
       <FileNumber>7</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -329,7 +411,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>9</FileNumber>
+=======
       <FileNumber>8</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -341,7 +427,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>10</FileNumber>
+=======
       <FileNumber>9</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -353,7 +443,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>11</FileNumber>
+=======
       <FileNumber>10</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -365,7 +459,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>12</FileNumber>
+=======
       <FileNumber>11</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -377,7 +475,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>13</FileNumber>
+=======
       <FileNumber>12</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -389,7 +491,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>14</FileNumber>
+=======
       <FileNumber>13</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -401,7 +507,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>15</FileNumber>
+=======
       <FileNumber>14</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -413,7 +523,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>16</FileNumber>
+=======
       <FileNumber>15</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -425,7 +539,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>17</FileNumber>
+=======
       <FileNumber>16</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -437,7 +555,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>18</FileNumber>
+=======
       <FileNumber>17</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -449,7 +571,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>19</FileNumber>
+=======
       <FileNumber>18</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -461,7 +587,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>20</FileNumber>
+=======
       <FileNumber>19</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -473,7 +603,11 @@
     </File>
     <File>
       <GroupNumber>3</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>21</FileNumber>
+=======
       <FileNumber>20</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -493,7 +627,11 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>4</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>22</FileNumber>
+=======
       <FileNumber>21</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -513,7 +651,11 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>5</GroupNumber>
+<<<<<<< HEAD
+      <FileNumber>23</FileNumber>
+=======
       <FileNumber>22</FileNumber>
+>>>>>>> d56ffeacf44833abf0afbd31917fbe80e8e1448b
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>

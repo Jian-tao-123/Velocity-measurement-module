@@ -36,12 +36,21 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+typedef struct 
+{
+  float shoot_speed;
+  uint32_t start_time;
+  uint32_t end_time;
+  uint8_t shoot_error_flag;
+}Bullets;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-
+#define length      15.0f    //�?管长�? cm
+#define deadTime    20.0f    //子弹在枪管�?��?�最长时�? s
+#define bulletTime  26.66f   //两�?�子弹之间�??�?触发时�??(�?15m/s计算) 0.1ms
+#define bulletMax   12       //�?�?�?多展�?12�?子�??
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/

@@ -2,6 +2,7 @@
 #include "stdlib.h"
 #include "oledfont.h"  	 
 #include "main.h"
+#include "math.h"
 
 u8 OLED_GRAM[144][8];
 
@@ -95,7 +96,7 @@ void OLED_Clear(void)
 			 OLED_GRAM[n][i]=0;//清除所有数据
 			}
   }
-	OLED_Refresh();//更新显示
+	//OLED_Refresh();//更新显示
 }
 
 //画点 
@@ -266,12 +267,42 @@ void OLED_ShowNum(u8 x,u8 y,u32 num,u8 len,u8 size1,u8 mode)
 			if(temp==0)
 			{
 				OLED_ShowChar(x+(size1/2+m)*t,y,'0',size1,mode);
-      }
+            }
 			else 
 			{
 			  OLED_ShowChar(x+(size1/2+m)*t,y,temp+'0',size1,mode);
 			}
   }
+}
+
+//显示浮点数
+//x,y :起点坐标
+//num :要显示的数字
+//Flen :数字的小数点位数
+//size:字体大小
+//mode:0,反色显示;1,正常显示
+void OLED_ShowFNum(u8 x,u8 y,float num,u8 Flen,u8 size1,u8 mode)
+{
+	u32 num1=num*pow(10,Flen);
+	u32 num2=(u32)num1/pow(10,Flen); //获得整数
+	u32 num3=num1-num2*pow(10,Flen); //获得小数
+	if(num2>=10)
+	  OLED_ShowNum(x,y,num2,2,size1,mode);
+	else
+	  OLED_ShowNum(x+size1-1,y,num2,1,size1,mode);
+	OLED_DrawPoint(x+2*(size1-1),y+size1-1,mode);
+	OLED_ShowNum(x+2*(size1),y,num3,Flen,size1,mode);
+}
+
+//显示没有数据
+//x,y :起点坐标
+//size:字体大小
+//mode:0,反色显示;1,正常显示
+void OLED_ShowNull(u8 x,u8 y,u8 size1,u8 mode)
+{
+	OLED_ShowString(x,y,"__",size1,mode);
+	OLED_ShowString(x+2*(size1-1)+1,y,"__",size1,mode);
+	OLED_DrawPoint(x+2*(size1-1),y+size1-1,mode);
 }
 
 //显示汉字
@@ -382,6 +413,42 @@ void OLED_ShowPicture(u8 x,u8 y,u8 sizex,u8 sizey,u8 BMP[],u8 mode)
      }
 	 }
 }
+
+//显示所有速度
+//range_speed :极差
+//average_speed :平均速度
+//bullet:Bullets句柄
+void OLED_showspeed(float range_speed,float average_speed,Bullets* bullet)
+{
+	OLED_Clear();
+	static uint8_t k=0;
+	for(int i=0;i<4;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			extern uint8_t position_x[3];
+            extern uint8_t position_y[4];
+			if(bullet[k].shoot_speed)
+			  OLED_ShowFNum(position_x[j],position_y[i],bullet[k].shoot_speed,2,8,1); 
+			else 
+			  OLED_ShowNull(position_x[j],position_y[i],8,1);  
+			k++;   
+			if(k>=12) k=0;
+		}
+	}
+	OLED_ShowString(0,52,"RNG:",8,1);
+	OLED_ShowString(70,52,"AVG:",8,1);
+	// if(range_speed)
+	   OLED_ShowFNum(25,52,range_speed,2,8,1);
+	// else
+	//   OLED_ShowNull(25,52,8,1);
+	// if(average_speed)
+	   OLED_ShowFNum(95,52,average_speed,2,8,1);
+	// else
+	//   OLED_ShowNull(95,52,8,1);
+	OLED_Refresh();
+}
+
 //OLED的初始化
 void OLED_Init(void)
 {
