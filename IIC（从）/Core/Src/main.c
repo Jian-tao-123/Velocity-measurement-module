@@ -25,7 +25,6 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "oled.h"
-#include "bmp.h"
 
 /* USER CODE END Includes */
 
@@ -85,6 +84,7 @@ uint32_t fly_time=0;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -105,14 +105,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_I2C1_Init();
   MX_I2C2_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 	HAL_TIM_Base_Start_IT(&htim1);
 	HAL_TIM_Base_Start_IT(&htim2);
-  HAL_I2C_EnableListen_IT(&hi2c1); 
+  HAL_I2C_EnableListen_IT(&hi2c2); 
 	OLED_Init();
 	OLED_ColorTurn(0);//0正常显示，1 反色显示
   OLED_DisplayTurn(1);//0正常显示 1 屏幕翻转显示
@@ -122,13 +121,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
   while (1)
   {
 	HAL_I2C_EnableListen_IT(&hi2c2);
- //HAL_Delay(10);
-	//HAL_Delay(500);
-  //HAL_Delay(10);
   OLED_showspeed(range_speed,average_speed,bullet);
   I2C_sendBuf = floatToBytes(average_speed);
     /* USER CODE END WHILE */
@@ -256,7 +251,7 @@ uint32_t get_time(void)
 /*将float类型的数据拆成四个u8*/
 uint8_t* floatToBytes(float floatValue) {
     
-    uint8_t byteArray[4];
+    static uint8_t byteArray[4];
     // 将float类型的数据转换为32位整数
     uint32_t intData = *((uint32_t*)&floatValue);
 
@@ -368,7 +363,6 @@ void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
 void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
 {
 }
-
 /* USER CODE END 4 */
 
 /**

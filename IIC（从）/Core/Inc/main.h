@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "math.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -47,10 +47,10 @@ typedef struct
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-#define length      15.0f    //ï¿½?ç®¡é•¿ï¿½? cm
-#define deadTime    20.0f    //å­å¼¹åœ¨æªç®¡ï¿½?ï¿½ï¿½?ï¿½æœ€é•¿æ—¶ï¿½? s
-#define bulletTime  26.66f   //ä¸¤ï¿½?ï¿½å­å¼¹ä¹‹é—´ï¿½??ï¿½?è§¦å‘æ—¶ï¿½??(ï¿½?15m/sè®¡ç®—) 0.1ms
-#define bulletMax   12       //ï¿½?ï¿½?ï¿½?å¤šå±•ï¿½?12ï¿½?å­ï¿½??
+#define length      15.0f    //??¹Ü³¤?? cm
+#define deadTime    20.0f    //×Óµ¯ÔÚÇ¹¹Ü??????×î³¤Ê±?? s
+#define bulletTime  26.66f   //Á½???×Óµ¯Ö®¼ä?????´¥·¢Ê±???(??15m/s¼ÆËã) 0.1ms
+#define bulletMax   12       //??????¶àÕ¹??12??×Ó???
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/

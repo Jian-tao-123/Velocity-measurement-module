@@ -1,5 +1,5 @@
 {
-  "name": "IIC",
+  "name": "new_speed",
   "type": "ARM",
   "dependenceList": [],
   "srcDirs": [
@@ -126,7 +126,16 @@
         "name": "OLED",
         "files": [
           {
+            "path": "../OLED/oledfont.h"
+          },
+          {
+            "path": "../OLED/oled.h"
+          },
+          {
             "path": "../OLED/oled.c"
+          },
+          {
+            "path": "../OLED/bmp.h"
           }
         ],
         "folders": []
@@ -134,13 +143,13 @@
     ]
   },
   "outDir": "build",
-  "deviceName": "STM32F103C8",
-  "packDir": ".pack/Keil/STM32F1xx_DFP.2.2.0",
+  "deviceName": null,
+  "packDir": null,
   "miscInfo": {
-    "uid": "471dd4fbe5050392bab5d0174dc3c40c"
+    "uid": "15a0adc1ecbc326678f60a0a9b16c133"
   },
   "targets": {
-    "IIC": {
+    "new_speed": {
       "excludeList": [],
       "toolchain": "AC5",
       "compileConfig": {
@@ -261,8 +270,8 @@
         "bin": "",
         "baseAddr": "",
         "cpuInfo": {
-          "vendor": "ST",
-          "cpuName": "STM32F103C8"
+          "vendor": "null",
+          "cpuName": "null"
         },
         "proType": 1,
         "speed": 8000,
@@ -278,7 +287,9 @@
           "../Drivers/CMSIS/Device/ST/STM32F1xx/Include",
           "../Drivers/CMSIS/Include",
           "../OLED",
-          "RTE/_IIC"
+          ".cmsis/include",
+          "RTE/_new_speed",
+          ".eide/deps"
         ],
         "libList": [],
         "sourceDirList": [],

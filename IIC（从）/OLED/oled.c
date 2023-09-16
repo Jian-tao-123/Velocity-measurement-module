@@ -2,7 +2,6 @@
 #include "stdlib.h"
 #include "oledfont.h"  	 
 #include "main.h"
-#include "math.h"
 
 u8 OLED_GRAM[144][8];
 
@@ -439,7 +438,7 @@ void OLED_showspeed(float range_speed,float average_speed,Bullets* bullet)
 	OLED_ShowString(0,52,"RNG:",8,1);
 	OLED_ShowString(70,52,"AVG:",8,1);
 	// if(range_speed)
-	   OLED_ShowFNum(25,52,range_speed,2,8,1);
+	   OLED_ShowFNum(25,52,range_speed,3,8,1);
 	// else
 	//   OLED_ShowNull(25,52,8,1);
 	// if(average_speed)
