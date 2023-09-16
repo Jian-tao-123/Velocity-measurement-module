@@ -104,7 +104,7 @@ int main(void)
 	mode_init();
 	all_init();
 	
-	pid_yinit(&yaw_motor_pid,60,0.1,0,5000,20000);
+	pid_yinit(&yaw_motor_pid,60,0.1,200,8000,20000);
 
 
   /* USER CODE END 2 */

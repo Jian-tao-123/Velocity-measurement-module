@@ -38,7 +38,7 @@ pid_struct_t yaw_motor_pid;//pitch电机PID结构体
   * @retval        none     
   */
 float yaw_temp_voltage = 0;
-
+float ssssss=80;
 void CHASSIS_TASK()
 {
 	static int time_count=1;
@@ -47,7 +47,7 @@ void CHASSIS_TASK()
 	if(time_count%5==0)
 	{
 
-		yaw_temp_voltage = pid_calc(&yaw_motor_pid, 100,chassis_center.actual_speed);  //带入pid计算
+		yaw_temp_voltage = pid_calc(&yaw_motor_pid, ssssss,chassis_center.actual_speed);  //带入pid计算
 		canTX_gimbal_y(yaw_temp_voltage);
 	}
 	if(time_count>=1000)			//清除计数标志    1s
