@@ -1,0 +1,4 @@
+arm-none-eabi-objcopy --update-section ER_IROM1="d:\flaodB\IIC\IIC（从）\MDK-ARM\build\new_speed\new_speed.bin" "d:\flaodB\IIC\IIC（从）\MDK-ARM\build\new_speed\new_speed.axf" "d:\flaodB\IIC\IIC（从）\MDK-ARM\build\new_speed\new_speed.elf"
+
+arm-none-eabi-objcopy: d:\flaodB\IIC\IIC（从）\MDK-ARM\build\new_speed\new_speed.elf: warning: allocated section `RW_IRAM1' not in segment
+
