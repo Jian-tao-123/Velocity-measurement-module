@@ -1,6 +1,10 @@
-# IIC
+## 简介
 
-IIC(MASTER AND SLAVE)
+> 通过软件spi和七针OLED通信，预留从机IIC接口和主机通信（IIC从文件）
+
+## IIC
+
+> IIC(MASTER AND SLAVE)
 
 ## 硬件
 
