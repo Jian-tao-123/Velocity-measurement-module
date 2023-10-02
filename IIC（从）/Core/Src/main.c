@@ -58,7 +58,9 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint8_t I2C_recvBuf[10] = {0};
-uint8_t* I2C_sendBuf = NULL;
+//uint8_t* I2C_sendBuf=NULL ;
+uint8_t I2C_sendBuf[10]={0,1,2,3,4,5,6,7,8,9} ;
+
 //static uint8_t I2C_recvBuf2[10]={0};
 uint8_t rx_flag=0;
 uint8_t position_x[3]={0,45,90};
@@ -74,7 +76,11 @@ uint8_t shoot_turns=0;
 uint8_t last_shoot_turns=0;
 uint8_t fly_bullets=0;  
 uint32_t fly_time=0;
-
+// TEST
+	float a=32,d=0;
+	float c=0;
+	uint8_t b[10]={0};
+uint32_t floatAsInt=0;
 /* USER CODE END 0 */
 
 /**
@@ -117,6 +123,8 @@ int main(void)
   OLED_DisplayTurn(1);//0正常显示 1 屏幕翻转显示
   uint8_t* floatToBytes(float floatValue);
   float bytesToFloat(uint8_t *byteArray);
+	
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -125,7 +133,25 @@ int main(void)
   {
 	HAL_I2C_EnableListen_IT(&hi2c2);
   OLED_showspeed(range_speed,average_speed,bullet);
-  I2C_sendBuf = floatToBytes(average_speed);
+		
+	floatAsInt = (uint32_t)(average_speed*100);
+	
+	I2C_sendBuf[0] = (floatAsInt >> 24) & 0xFF;
+	I2C_sendBuf[1] = (floatAsInt >> 16) & 0xFF;
+	I2C_sendBuf[2] = (floatAsInt >> 8) & 0xFF;
+	I2C_sendBuf[3] = floatAsInt & 0xFF;
+
+// TEST
+		
+//		floatAsInt = (uint32_t)(a*100);
+//    b[0] = (floatAsInt >> 24) & 0xFF;
+//    b[1] = (floatAsInt >> 16) & 0xFF;
+//    b[2] = (floatAsInt >> 8) & 0xFF;
+//    b[3] = floatAsInt & 0xFF;
+
+//    // 将字节数组中的数据复制到int变量中（使用大端序列）
+//    c = ((b[0] << 24) | (b[1] << 16) | (b[2] << 8) | b[3])/100.0f;
+		
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -282,7 +308,7 @@ float bytesToFloat(uint8_t *byteArray) {
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-  if(GPIO_Pin==GPIO_PIN_4) //???
+  if(GPIO_Pin==GPIO_PIN_8) //???
   {
 		if(!shoot_flag)
 		{
@@ -295,7 +321,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			shoot_flag=1;
 		}
   }
-  else if(GPIO_Pin==GPIO_PIN_5) //???
+  else if(GPIO_Pin==GPIO_PIN_9) //???
   {
 		if(shoot_flag)
 	  {

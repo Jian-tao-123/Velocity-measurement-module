@@ -56,8 +56,9 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 static uint8_t I2C_recvBuf[10] = {0};
-static uint8_t I2C_sendBuf[10] = {0,1,2,3,4,5,6,7,8,9};
+static uint8_t I2C_sendBuf[10] = {0};
 static uint8_t I2C_recvBuf2[10]={0};
+float avg;
 /* USER CODE END 0 */
 
 /**
@@ -97,9 +98,11 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-		HAL_I2C_Master_Transmit(&hi2c1/*发送的I2C*/, (20<<1)|0x00/*地址*/, I2C_sendBuf/*发送数据的地址*/, sizeof(I2C_sendBuf/*发送的字节*/), 1000/*等待的时间*/); 
+		//HAL_I2C_Master_Transmit(&hi2c1/*发送的I2C*/, (20<<1)|0x01/*地址*/, I2C_sendBuf/*发送数据的地址*/, sizeof(I2C_sendBuf/*发送的字节*/), 1000/*等待的时间*/); 
 		HAL_Delay(100);
-		//HAL_I2C_Master_Receive(&hi2c1,(20<<1)|0x01,I2C_recvBuf2,sizeof(I2C_recvBuf2),100);
+		HAL_I2C_Master_Receive(&hi2c1,(20<<1)|0x01,I2C_recvBuf2,sizeof(I2C_recvBuf2),100);
+		avg = ((I2C_recvBuf2[0] << 24) | (I2C_recvBuf2[1] << 16) | (I2C_recvBuf2[2] << 8) | I2C_recvBuf2[3])/100.0f;
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -162,11 +165,8 @@ void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
 {
 
 		HAL_I2C_DeInit(hi2c);
-		MX_I2C1_Init();
-		//MX_I2C2_Init();
-	
+		MX_I2C1_Init();	
 }
-
 
 
 /* USER CODE END 4 */
