@@ -33,7 +33,9 @@
 #define OLED_CS_Set()  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_SET)
 
 ```
-
+- 红外传感器
+> PA8 & PA9
+  
 - IIC
   - 主机
   ```C
