@@ -64,6 +64,15 @@
         "files": [],
         "folders": [
           {
+            "name": "CMSIS",
+            "files": [
+              {
+                "path": "../Core/Src/system_stm32f1xx.c"
+              }
+            ],
+            "folders": []
+          },
+          {
             "name": "STM32F1xx_HAL_Driver",
             "files": [
               {
@@ -110,15 +119,6 @@
               }
             ],
             "folders": []
-          },
-          {
-            "name": "CMSIS",
-            "files": [
-              {
-                "path": "../Core/Src/system_stm32f1xx.c"
-              }
-            ],
-            "folders": []
           }
         ]
       },
@@ -126,16 +126,16 @@
         "name": "OLED",
         "files": [
           {
-            "path": "../OLED/oledfont.h"
-          },
-          {
-            "path": "../OLED/oled.h"
+            "path": "../OLED/bmp.h"
           },
           {
             "path": "../OLED/oled.c"
           },
           {
-            "path": "../OLED/bmp.h"
+            "path": "../OLED/oled.h"
+          },
+          {
+            "path": "../OLED/oledfont.h"
           }
         ],
         "folders": []
@@ -144,7 +144,7 @@
   },
   "outDir": "build",
   "deviceName": null,
-  "packDir": null,
+  "packDir": ".pack/Keil/STM32F1xx_DFP.2.2.0",
   "miscInfo": {
     "uid": "15a0adc1ecbc326678f60a0a9b16c133"
   },
@@ -288,8 +288,7 @@
           "../Drivers/CMSIS/Include",
           "../OLED",
           ".cmsis/include",
-          "RTE/_new_speed",
-          ".eide/deps"
+          "RTE/_new_speed"
         ],
         "libList": [],
         "sourceDirList": [],

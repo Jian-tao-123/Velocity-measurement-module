@@ -7,7 +7,7 @@
     "buildMode": "fast|multhread",
     "showRepathOnLog": true,
     "threadNum": 16,
-    "rootDir": "d:\\flaodB\\IIC\\IIC（从）\\MDK-ARM",
+    "rootDir": "d:\\stm32_project\\IIC-main\\IIC（从）\\MDK-ARM",
     "dumpPath": "build\\new_speed",
     "outDir": "build\\new_speed",
     "ram": 20480,
@@ -20,8 +20,7 @@
         "../Drivers/CMSIS/Include",
         "../OLED",
         ".cmsis/include",
-        "RTE/_new_speed",
-        ".eide/deps"
+        "RTE/_new_speed"
     ],
     "libDirs": [],
     "defines": [
@@ -54,7 +53,7 @@
         "startup_stm32f103xb.s"
     ],
     "sourceParams": {},
-    "sourceParamsMtime": 1695018073251.736,
+    "sourceParamsMtime": 1695216344504.3882,
     "options": {
         "version": 4,
         "beforeBuildTasks": [],
@@ -87,20 +86,20 @@
             "ro-base": "",
             "rw-base": "",
             "link-scatter": [
-                "\"d:/flaodB/IIC/IIC（从）/MDK-ARM/build/new_speed/new_speed.sct\""
+                "\"d:/stm32_project/IIC-main/IIC（从）/MDK-ARM/build/new_speed/new_speed.sct\""
             ]
         }
     },
     "env": {
-        "workspaceFolder": "d:\\flaodB\\IIC\\IIC（从）\\MDK-ARM",
+        "workspaceFolder": "d:\\stm32_project\\IIC-main\\IIC（从）\\MDK-ARM",
         "workspaceFolderBasename": "MDK-ARM",
-        "OutDir": "d:\\flaodB\\IIC\\IIC（从）\\MDK-ARM\\build\\new_speed",
+        "OutDir": "d:\\stm32_project\\IIC-main\\IIC（从）\\MDK-ARM\\build\\new_speed",
         "OutDirRoot": "build",
         "OutDirBase": "build\\new_speed",
         "ProjectName": "new_speed",
         "ConfigName": "new_speed",
-        "ProjectRoot": "d:\\flaodB\\IIC\\IIC（从）\\MDK-ARM",
-        "ExecutableName": "d:\\flaodB\\IIC\\IIC（从）\\MDK-ARM\\build\\new_speed\\new_speed",
+        "ProjectRoot": "d:\\stm32_project\\IIC-main\\IIC（从）\\MDK-ARM",
+        "ExecutableName": "d:\\stm32_project\\IIC-main\\IIC（从）\\MDK-ARM\\build\\new_speed\\new_speed",
         "SYS_Platform": "win32",
         "SYS_DirSep": "\\",
         "SYS_DirSeparator": "\\",
@@ -116,6 +115,6 @@
         "global": "cab97363c56a7cd5c4d6d683dfcaa9f9",
         "c/cpp-compiler": "6b961c7ab25acd2372f6c507ee50ebef",
         "asm-compiler": "99914b932bd37a50b983c5e7c90ae93b",
-        "linker": "1cb80a94ffeac792e84e68611b36fc13"
+        "linker": "93e634e3df6feb654002c455a3b91b1b"
     }
 }
