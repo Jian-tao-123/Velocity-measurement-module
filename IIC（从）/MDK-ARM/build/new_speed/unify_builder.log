@@ -16,3 +16,20 @@
 [2023-10-08 21:34:45]	[done]
 	build successfully !
 
+[2023-10-08 21:42:12]	compilation failed at : "d:\stm32_project\IIC-main\IIC£¨´Ó£©\OLED\oled.c", exit code: 1
+command: 
+  "D:\Keil5\keil5_anzhuangbao\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../OLED -I.cmsis/include -IRTE/_new_speed -DUSE_HAL_DRIVER -DSTM32F103xB --cpu Cortex-M3 --li --c99 -D__MICROLIB -O3 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o .\build\new_speed\__\OLED\oled.o --no_depend_system_headers --depend .\build\new_speed\__\OLED\oled.d .\..\OLED\oled.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\OLED\oled.c", line 429: Error:  #20: identifier "k" is undefined
+  			if(bullet[k].shoot_speed)
+  			          ^
+".\..\OLED\oled.c", line 433: Error:  #20: identifier "k" is undefined
+  			k++;   
+  			^
+.\..\OLED\oled.c: 0 warnings, 2 errors
+
+[2023-10-08 21:42:32]	[done]
+	build successfully !
+

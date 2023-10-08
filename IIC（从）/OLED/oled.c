@@ -420,7 +420,6 @@ void OLED_ShowPicture(u8 x,u8 y,u8 sizex,u8 sizey,u8 BMP[],u8 mode)
 void OLED_showspeed(float range_speed,float average_speed,Bullets* bullet)
 {
 	OLED_Clear();
-	OLED_DisplayTurn(1);  //屏幕反转
 	static uint8_t k=0;
 	for(int i=0;i<4;i++)
 	{

@@ -120,7 +120,7 @@ int main(void)
   HAL_I2C_EnableListen_IT(&hi2c2); 
 	OLED_Init();
 	OLED_ColorTurn(0);//0正常显示，1 反色显示
-  OLED_DisplayTurn(1);//0正常显示 1 屏幕翻转显示
+  OLED_DisplayTurn(0);//0正常显示 1 屏幕翻转显示
   uint8_t* floatToBytes(float floatValue);
   float bytesToFloat(uint8_t *byteArray);
 	
