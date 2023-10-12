@@ -10,7 +10,7 @@
             "interface": "swd",
             "executable": "build\\new_speed\\new_speed.elf",
             "runToEntryPoint": "main",
-            "device": "null"
+            "device": "STM32F103C8"
         }
     ]
 }

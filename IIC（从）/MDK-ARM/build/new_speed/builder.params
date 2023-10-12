@@ -19,7 +19,6 @@
         "../Drivers/CMSIS/Device/ST/STM32F1xx/Include",
         "../Drivers/CMSIS/Include",
         "../OLED",
-        ".cmsis/include",
         "RTE/_new_speed"
     ],
     "libDirs": [],

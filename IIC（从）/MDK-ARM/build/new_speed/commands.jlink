@@ -1,0 +1,6 @@
+r
+halt
+loadfile "d:\stm32_project\IIC-main\IIC£¨´Ó£©\MDK-ARM\build\new_speed\new_speed.hex"
+r
+go
+exit

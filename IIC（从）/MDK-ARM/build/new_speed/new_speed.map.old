@@ -566,7 +566,6 @@ Section Cross References
     oled.o(i.OLED_ShowString) refers to oled.o(i.OLED_ShowChar) for OLED_ShowChar
     oled.o(i.OLED_WR_Byte) refers to stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     oled.o(i.OLED_showspeed) refers to oled.o(i.OLED_Clear) for OLED_Clear
-    oled.o(i.OLED_showspeed) refers to oled.o(i.OLED_DisplayTurn) for OLED_DisplayTurn
     oled.o(i.OLED_showspeed) refers to oled.o(i.OLED_ShowFNum) for OLED_ShowFNum
     oled.o(i.OLED_showspeed) refers to oled.o(i.OLED_ShowNull) for OLED_ShowNull
     oled.o(i.OLED_showspeed) refers to oled.o(i.OLED_ShowString) for OLED_ShowString
@@ -1358,50 +1357,50 @@ Image Symbol Table
     i.OLED_ShowString                        0x08002f92   Section        0  oled.o(i.OLED_ShowString)
     i.OLED_WR_Byte                           0x08002fd0   Section        0  oled.o(i.OLED_WR_Byte)
     i.OLED_showspeed                         0x08003040   Section        0  oled.o(i.OLED_showspeed)
-    i.PendSV_Handler                         0x08003118   Section        0  stm32f1xx_it.o(i.PendSV_Handler)
-    i.SVC_Handler                            0x0800311a   Section        0  stm32f1xx_it.o(i.SVC_Handler)
-    i.SysTick_Handler                        0x0800311c   Section        0  stm32f1xx_it.o(i.SysTick_Handler)
-    i.SystemClock_Config                     0x08003120   Section        0  main.o(i.SystemClock_Config)
-    i.SystemInit                             0x0800317e   Section        0  system_stm32f1xx.o(i.SystemInit)
-    i.TIM1_BRK_IRQHandler                    0x08003180   Section        0  stm32f1xx_it.o(i.TIM1_BRK_IRQHandler)
-    i.TIM1_CC_IRQHandler                     0x0800318c   Section        0  stm32f1xx_it.o(i.TIM1_CC_IRQHandler)
-    i.TIM1_TRG_COM_IRQHandler                0x08003198   Section        0  stm32f1xx_it.o(i.TIM1_TRG_COM_IRQHandler)
-    i.TIM1_UP_IRQHandler                     0x080031a4   Section        0  stm32f1xx_it.o(i.TIM1_UP_IRQHandler)
-    i.TIM2_IRQHandler                        0x080031b0   Section        0  stm32f1xx_it.o(i.TIM2_IRQHandler)
-    i.TIM_Base_SetConfig                     0x080031bc   Section        0  stm32f1xx_hal_tim.o(i.TIM_Base_SetConfig)
-    i.TIM_ETR_SetConfig                      0x08003228   Section        0  stm32f1xx_hal_tim.o(i.TIM_ETR_SetConfig)
-    i.TIM_ITRx_SetConfig                     0x0800323c   Section        0  stm32f1xx_hal_tim.o(i.TIM_ITRx_SetConfig)
-    TIM_ITRx_SetConfig                       0x0800323d   Thumb Code    16  stm32f1xx_hal_tim.o(i.TIM_ITRx_SetConfig)
-    i.TIM_TI1_ConfigInputStage               0x0800324c   Section        0  stm32f1xx_hal_tim.o(i.TIM_TI1_ConfigInputStage)
-    TIM_TI1_ConfigInputStage                 0x0800324d   Thumb Code    34  stm32f1xx_hal_tim.o(i.TIM_TI1_ConfigInputStage)
-    i.TIM_TI2_ConfigInputStage               0x0800326e   Section        0  stm32f1xx_hal_tim.o(i.TIM_TI2_ConfigInputStage)
-    TIM_TI2_ConfigInputStage                 0x0800326f   Thumb Code    36  stm32f1xx_hal_tim.o(i.TIM_TI2_ConfigInputStage)
-    i.UsageFault_Handler                     0x08003292   Section        0  stm32f1xx_it.o(i.UsageFault_Handler)
-    i.__ARM_fpclassify                       0x08003294   Section        0  fpclassify.o(i.__ARM_fpclassify)
-    i.__NVIC_SetPriority                     0x080032bc   Section        0  stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority)
-    __NVIC_SetPriority                       0x080032bd   Thumb Code    32  stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority)
-    i.__kernel_poly                          0x080032dc   Section        0  poly.o(i.__kernel_poly)
-    i.__mathlib_dbl_divzero                  0x08003388   Section        0  dunder.o(i.__mathlib_dbl_divzero)
-    i.__mathlib_dbl_infnan2                  0x08003398   Section        0  dunder.o(i.__mathlib_dbl_infnan2)
-    i.__mathlib_dbl_invalid                  0x0800339c   Section        0  dunder.o(i.__mathlib_dbl_invalid)
-    i.__mathlib_dbl_overflow                 0x080033a8   Section        0  dunder.o(i.__mathlib_dbl_overflow)
-    i.__mathlib_dbl_underflow                0x080033b8   Section        0  dunder.o(i.__mathlib_dbl_underflow)
-    i.__scatterload_copy                     0x080033c8   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x080033d6   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x080033d8   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.__set_errno                            0x080033e8   Section        0  errno.o(i.__set_errno)
-    i.cal_average_speed                      0x080033f4   Section        0  main.o(i.cal_average_speed)
-    i.cal_range_speed                        0x08003440   Section        0  main.o(i.cal_range_speed)
-    i.cal_shoot_speed                        0x0800348c   Section        0  main.o(i.cal_shoot_speed)
-    i.main                                   0x080034e0   Section        0  main.o(i.main)
-    i.pow                                    0x08003568   Section        0  pow.o(i.pow)
-    i.sqrt                                   0x08003f40   Section        0  sqrt.o(i.sqrt)
-    .constdata                               0x08003f8c   Section       16  system_stm32f1xx.o(.constdata)
-    .constdata                               0x08003f9c   Section        8  system_stm32f1xx.o(.constdata)
-    .constdata                               0x08003fa4   Section       18  stm32f1xx_hal_rcc.o(.constdata)
-    aPredivFactorTable                       0x08003fa4   Data           2  stm32f1xx_hal_rcc.o(.constdata)
-    aPLLMULFactorTable                       0x08003fa6   Data          16  stm32f1xx_hal_rcc.o(.constdata)
-    .constdata                               0x08003fb6   Section     7696  oled.o(.constdata)
+    i.PendSV_Handler                         0x08003114   Section        0  stm32f1xx_it.o(i.PendSV_Handler)
+    i.SVC_Handler                            0x08003116   Section        0  stm32f1xx_it.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x08003118   Section        0  stm32f1xx_it.o(i.SysTick_Handler)
+    i.SystemClock_Config                     0x0800311c   Section        0  main.o(i.SystemClock_Config)
+    i.SystemInit                             0x0800317a   Section        0  system_stm32f1xx.o(i.SystemInit)
+    i.TIM1_BRK_IRQHandler                    0x0800317c   Section        0  stm32f1xx_it.o(i.TIM1_BRK_IRQHandler)
+    i.TIM1_CC_IRQHandler                     0x08003188   Section        0  stm32f1xx_it.o(i.TIM1_CC_IRQHandler)
+    i.TIM1_TRG_COM_IRQHandler                0x08003194   Section        0  stm32f1xx_it.o(i.TIM1_TRG_COM_IRQHandler)
+    i.TIM1_UP_IRQHandler                     0x080031a0   Section        0  stm32f1xx_it.o(i.TIM1_UP_IRQHandler)
+    i.TIM2_IRQHandler                        0x080031ac   Section        0  stm32f1xx_it.o(i.TIM2_IRQHandler)
+    i.TIM_Base_SetConfig                     0x080031b8   Section        0  stm32f1xx_hal_tim.o(i.TIM_Base_SetConfig)
+    i.TIM_ETR_SetConfig                      0x08003224   Section        0  stm32f1xx_hal_tim.o(i.TIM_ETR_SetConfig)
+    i.TIM_ITRx_SetConfig                     0x08003238   Section        0  stm32f1xx_hal_tim.o(i.TIM_ITRx_SetConfig)
+    TIM_ITRx_SetConfig                       0x08003239   Thumb Code    16  stm32f1xx_hal_tim.o(i.TIM_ITRx_SetConfig)
+    i.TIM_TI1_ConfigInputStage               0x08003248   Section        0  stm32f1xx_hal_tim.o(i.TIM_TI1_ConfigInputStage)
+    TIM_TI1_ConfigInputStage                 0x08003249   Thumb Code    34  stm32f1xx_hal_tim.o(i.TIM_TI1_ConfigInputStage)
+    i.TIM_TI2_ConfigInputStage               0x0800326a   Section        0  stm32f1xx_hal_tim.o(i.TIM_TI2_ConfigInputStage)
+    TIM_TI2_ConfigInputStage                 0x0800326b   Thumb Code    36  stm32f1xx_hal_tim.o(i.TIM_TI2_ConfigInputStage)
+    i.UsageFault_Handler                     0x0800328e   Section        0  stm32f1xx_it.o(i.UsageFault_Handler)
+    i.__ARM_fpclassify                       0x08003290   Section        0  fpclassify.o(i.__ARM_fpclassify)
+    i.__NVIC_SetPriority                     0x080032b8   Section        0  stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x080032b9   Thumb Code    32  stm32f1xx_hal_cortex.o(i.__NVIC_SetPriority)
+    i.__kernel_poly                          0x080032d8   Section        0  poly.o(i.__kernel_poly)
+    i.__mathlib_dbl_divzero                  0x08003384   Section        0  dunder.o(i.__mathlib_dbl_divzero)
+    i.__mathlib_dbl_infnan2                  0x08003394   Section        0  dunder.o(i.__mathlib_dbl_infnan2)
+    i.__mathlib_dbl_invalid                  0x08003398   Section        0  dunder.o(i.__mathlib_dbl_invalid)
+    i.__mathlib_dbl_overflow                 0x080033a4   Section        0  dunder.o(i.__mathlib_dbl_overflow)
+    i.__mathlib_dbl_underflow                0x080033b4   Section        0  dunder.o(i.__mathlib_dbl_underflow)
+    i.__scatterload_copy                     0x080033c4   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x080033d2   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x080033d4   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.__set_errno                            0x080033e4   Section        0  errno.o(i.__set_errno)
+    i.cal_average_speed                      0x080033f0   Section        0  main.o(i.cal_average_speed)
+    i.cal_range_speed                        0x0800343c   Section        0  main.o(i.cal_range_speed)
+    i.cal_shoot_speed                        0x08003488   Section        0  main.o(i.cal_shoot_speed)
+    i.main                                   0x080034dc   Section        0  main.o(i.main)
+    i.pow                                    0x08003564   Section        0  pow.o(i.pow)
+    i.sqrt                                   0x08003f3c   Section        0  sqrt.o(i.sqrt)
+    .constdata                               0x08003f88   Section       16  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08003f98   Section        8  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08003fa0   Section       18  stm32f1xx_hal_rcc.o(.constdata)
+    aPredivFactorTable                       0x08003fa0   Data           2  stm32f1xx_hal_rcc.o(.constdata)
+    aPLLMULFactorTable                       0x08003fa2   Data          16  stm32f1xx_hal_rcc.o(.constdata)
+    .constdata                               0x08003fb2   Section     7696  oled.o(.constdata)
     .constdata                               0x08005dc8   Section      136  pow.o(.constdata)
     bp                                       0x08005dc8   Data          16  pow.o(.constdata)
     dp_h                                     0x08005dd8   Data          16  pow.o(.constdata)
@@ -1608,47 +1607,47 @@ Image Symbol Table
     OLED_ShowNum                             0x08002f25   Thumb Code   110  oled.o(i.OLED_ShowNum)
     OLED_ShowString                          0x08002f93   Thumb Code    60  oled.o(i.OLED_ShowString)
     OLED_WR_Byte                             0x08002fd1   Thumb Code   108  oled.o(i.OLED_WR_Byte)
-    OLED_showspeed                           0x08003041   Thumb Code   188  oled.o(i.OLED_showspeed)
-    PendSV_Handler                           0x08003119   Thumb Code     2  stm32f1xx_it.o(i.PendSV_Handler)
-    SVC_Handler                              0x0800311b   Thumb Code     2  stm32f1xx_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x0800311d   Thumb Code     4  stm32f1xx_it.o(i.SysTick_Handler)
-    SystemClock_Config                       0x08003121   Thumb Code    94  main.o(i.SystemClock_Config)
-    SystemInit                               0x0800317f   Thumb Code     2  system_stm32f1xx.o(i.SystemInit)
-    TIM1_BRK_IRQHandler                      0x08003181   Thumb Code     6  stm32f1xx_it.o(i.TIM1_BRK_IRQHandler)
-    TIM1_CC_IRQHandler                       0x0800318d   Thumb Code     6  stm32f1xx_it.o(i.TIM1_CC_IRQHandler)
-    TIM1_TRG_COM_IRQHandler                  0x08003199   Thumb Code     6  stm32f1xx_it.o(i.TIM1_TRG_COM_IRQHandler)
-    TIM1_UP_IRQHandler                       0x080031a5   Thumb Code     6  stm32f1xx_it.o(i.TIM1_UP_IRQHandler)
-    TIM2_IRQHandler                          0x080031b1   Thumb Code     6  stm32f1xx_it.o(i.TIM2_IRQHandler)
-    TIM_Base_SetConfig                       0x080031bd   Thumb Code    94  stm32f1xx_hal_tim.o(i.TIM_Base_SetConfig)
-    TIM_ETR_SetConfig                        0x08003229   Thumb Code    20  stm32f1xx_hal_tim.o(i.TIM_ETR_SetConfig)
-    UsageFault_Handler                       0x08003293   Thumb Code     2  stm32f1xx_it.o(i.UsageFault_Handler)
-    __ARM_fpclassify                         0x08003295   Thumb Code    40  fpclassify.o(i.__ARM_fpclassify)
-    __kernel_poly                            0x080032dd   Thumb Code   170  poly.o(i.__kernel_poly)
-    __mathlib_dbl_divzero                    0x08003389   Thumb Code    12  dunder.o(i.__mathlib_dbl_divzero)
-    __mathlib_dbl_infnan2                    0x08003399   Thumb Code     4  dunder.o(i.__mathlib_dbl_infnan2)
-    __mathlib_dbl_invalid                    0x0800339d   Thumb Code    12  dunder.o(i.__mathlib_dbl_invalid)
-    __mathlib_dbl_overflow                   0x080033a9   Thumb Code    14  dunder.o(i.__mathlib_dbl_overflow)
-    __mathlib_dbl_underflow                  0x080033b9   Thumb Code    10  dunder.o(i.__mathlib_dbl_underflow)
-    __scatterload_copy                       0x080033c9   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x080033d7   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x080033d9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    __set_errno                              0x080033e9   Thumb Code     6  errno.o(i.__set_errno)
-    cal_average_speed                        0x080033f5   Thumb Code    74  main.o(i.cal_average_speed)
-    cal_range_speed                          0x08003441   Thumb Code    74  main.o(i.cal_range_speed)
-    cal_shoot_speed                          0x0800348d   Thumb Code    72  main.o(i.cal_shoot_speed)
-    main                                     0x080034e1   Thumb Code   112  main.o(i.main)
-    pow                                      0x08003569   Thumb Code  2512  pow.o(i.pow)
-    sqrt                                     0x08003f41   Thumb Code    76  sqrt.o(i.sqrt)
-    AHBPrescTable                            0x08003f8c   Data          16  system_stm32f1xx.o(.constdata)
-    APBPrescTable                            0x08003f9c   Data           8  system_stm32f1xx.o(.constdata)
-    asc2_0806                                0x08003fb6   Data         552  oled.o(.constdata)
-    asc2_1206                                0x080041de   Data        1140  oled.o(.constdata)
-    asc2_1608                                0x08004652   Data        1520  oled.o(.constdata)
-    asc2_2412                                0x08004c42   Data        3420  oled.o(.constdata)
-    Hzk1                                     0x0800599e   Data         352  oled.o(.constdata)
-    Hzk2                                     0x08005afe   Data          72  oled.o(.constdata)
-    Hzk3                                     0x08005b46   Data         128  oled.o(.constdata)
-    Hzk4                                     0x08005bc6   Data         512  oled.o(.constdata)
+    OLED_showspeed                           0x08003041   Thumb Code   182  oled.o(i.OLED_showspeed)
+    PendSV_Handler                           0x08003115   Thumb Code     2  stm32f1xx_it.o(i.PendSV_Handler)
+    SVC_Handler                              0x08003117   Thumb Code     2  stm32f1xx_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x08003119   Thumb Code     4  stm32f1xx_it.o(i.SysTick_Handler)
+    SystemClock_Config                       0x0800311d   Thumb Code    94  main.o(i.SystemClock_Config)
+    SystemInit                               0x0800317b   Thumb Code     2  system_stm32f1xx.o(i.SystemInit)
+    TIM1_BRK_IRQHandler                      0x0800317d   Thumb Code     6  stm32f1xx_it.o(i.TIM1_BRK_IRQHandler)
+    TIM1_CC_IRQHandler                       0x08003189   Thumb Code     6  stm32f1xx_it.o(i.TIM1_CC_IRQHandler)
+    TIM1_TRG_COM_IRQHandler                  0x08003195   Thumb Code     6  stm32f1xx_it.o(i.TIM1_TRG_COM_IRQHandler)
+    TIM1_UP_IRQHandler                       0x080031a1   Thumb Code     6  stm32f1xx_it.o(i.TIM1_UP_IRQHandler)
+    TIM2_IRQHandler                          0x080031ad   Thumb Code     6  stm32f1xx_it.o(i.TIM2_IRQHandler)
+    TIM_Base_SetConfig                       0x080031b9   Thumb Code    94  stm32f1xx_hal_tim.o(i.TIM_Base_SetConfig)
+    TIM_ETR_SetConfig                        0x08003225   Thumb Code    20  stm32f1xx_hal_tim.o(i.TIM_ETR_SetConfig)
+    UsageFault_Handler                       0x0800328f   Thumb Code     2  stm32f1xx_it.o(i.UsageFault_Handler)
+    __ARM_fpclassify                         0x08003291   Thumb Code    40  fpclassify.o(i.__ARM_fpclassify)
+    __kernel_poly                            0x080032d9   Thumb Code   170  poly.o(i.__kernel_poly)
+    __mathlib_dbl_divzero                    0x08003385   Thumb Code    12  dunder.o(i.__mathlib_dbl_divzero)
+    __mathlib_dbl_infnan2                    0x08003395   Thumb Code     4  dunder.o(i.__mathlib_dbl_infnan2)
+    __mathlib_dbl_invalid                    0x08003399   Thumb Code    12  dunder.o(i.__mathlib_dbl_invalid)
+    __mathlib_dbl_overflow                   0x080033a5   Thumb Code    14  dunder.o(i.__mathlib_dbl_overflow)
+    __mathlib_dbl_underflow                  0x080033b5   Thumb Code    10  dunder.o(i.__mathlib_dbl_underflow)
+    __scatterload_copy                       0x080033c5   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x080033d3   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x080033d5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    __set_errno                              0x080033e5   Thumb Code     6  errno.o(i.__set_errno)
+    cal_average_speed                        0x080033f1   Thumb Code    74  main.o(i.cal_average_speed)
+    cal_range_speed                          0x0800343d   Thumb Code    74  main.o(i.cal_range_speed)
+    cal_shoot_speed                          0x08003489   Thumb Code    72  main.o(i.cal_shoot_speed)
+    main                                     0x080034dd   Thumb Code   112  main.o(i.main)
+    pow                                      0x08003565   Thumb Code  2512  pow.o(i.pow)
+    sqrt                                     0x08003f3d   Thumb Code    76  sqrt.o(i.sqrt)
+    AHBPrescTable                            0x08003f88   Data          16  system_stm32f1xx.o(.constdata)
+    APBPrescTable                            0x08003f98   Data           8  system_stm32f1xx.o(.constdata)
+    asc2_0806                                0x08003fb2   Data         552  oled.o(.constdata)
+    asc2_1206                                0x080041da   Data        1140  oled.o(.constdata)
+    asc2_1608                                0x0800464e   Data        1520  oled.o(.constdata)
+    asc2_2412                                0x08004c3e   Data        3420  oled.o(.constdata)
+    Hzk1                                     0x0800599a   Data         352  oled.o(.constdata)
+    Hzk2                                     0x08005afa   Data          72  oled.o(.constdata)
+    Hzk3                                     0x08005b42   Data         128  oled.o(.constdata)
+    Hzk4                                     0x08005bc2   Data         512  oled.o(.constdata)
     __mathlib_zero                           0x08005e50   Data           8  qnan.o(.constdata)
     Region$$Table$$Base                      0x08005e58   Number         0  anon$$obj.o(Region$$Table)
     Region$$Table$$Limit                     0x08005e78   Number         0  anon$$obj.o(Region$$Table)
@@ -1832,51 +1831,51 @@ Memory Map of the image
     0x08002f92   0x0000003c   Code   RO         2981    i.OLED_ShowString   oled.o
     0x08002fce   0x00000002   PAD
     0x08002fd0   0x00000070   Code   RO         2982    i.OLED_WR_Byte      oled.o
-    0x08003040   0x000000d8   Code   RO         2983    i.OLED_showspeed    oled.o
-    0x08003118   0x00000002   Code   RO          338    i.PendSV_Handler    stm32f1xx_it.o
-    0x0800311a   0x00000002   Code   RO          339    i.SVC_Handler       stm32f1xx_it.o
-    0x0800311c   0x00000004   Code   RO          340    i.SysTick_Handler   stm32f1xx_it.o
-    0x08003120   0x0000005e   Code   RO          174    i.SystemClock_Config  main.o
-    0x0800317e   0x00000002   Code   RO          455    i.SystemInit        system_stm32f1xx.o
-    0x08003180   0x0000000c   Code   RO          341    i.TIM1_BRK_IRQHandler  stm32f1xx_it.o
-    0x0800318c   0x0000000c   Code   RO          342    i.TIM1_CC_IRQHandler  stm32f1xx_it.o
-    0x08003198   0x0000000c   Code   RO          343    i.TIM1_TRG_COM_IRQHandler  stm32f1xx_it.o
-    0x080031a4   0x0000000c   Code   RO          344    i.TIM1_UP_IRQHandler  stm32f1xx_it.o
-    0x080031b0   0x0000000c   Code   RO          345    i.TIM2_IRQHandler   stm32f1xx_it.o
-    0x080031bc   0x0000006c   Code   RO         2085    i.TIM_Base_SetConfig  stm32f1xx_hal_tim.o
-    0x08003228   0x00000014   Code   RO         2096    i.TIM_ETR_SetConfig  stm32f1xx_hal_tim.o
-    0x0800323c   0x00000010   Code   RO         2097    i.TIM_ITRx_SetConfig  stm32f1xx_hal_tim.o
-    0x0800324c   0x00000022   Code   RO         2103    i.TIM_TI1_ConfigInputStage  stm32f1xx_hal_tim.o
-    0x0800326e   0x00000024   Code   RO         2105    i.TIM_TI2_ConfigInputStage  stm32f1xx_hal_tim.o
-    0x08003292   0x00000002   Code   RO          346    i.UsageFault_Handler  stm32f1xx_it.o
-    0x08003294   0x00000028   Code   RO         3186    i.__ARM_fpclassify  m_ws.l(fpclassify.o)
-    0x080032bc   0x00000020   Code   RO          729    i.__NVIC_SetPriority  stm32f1xx_hal_cortex.o
-    0x080032dc   0x000000aa   Code   RO         3188    i.__kernel_poly     m_ws.l(poly.o)
-    0x08003386   0x00000002   PAD
-    0x08003388   0x00000010   Code   RO         3172    i.__mathlib_dbl_divzero  m_ws.l(dunder.o)
-    0x08003398   0x00000004   Code   RO         3174    i.__mathlib_dbl_infnan2  m_ws.l(dunder.o)
-    0x0800339c   0x0000000c   Code   RO         3175    i.__mathlib_dbl_invalid  m_ws.l(dunder.o)
-    0x080033a8   0x0000000e   Code   RO         3176    i.__mathlib_dbl_overflow  m_ws.l(dunder.o)
-    0x080033b6   0x00000002   PAD
-    0x080033b8   0x00000010   Code   RO         3178    i.__mathlib_dbl_underflow  m_ws.l(dunder.o)
-    0x080033c8   0x0000000e   Code   RO         3243    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080033d6   0x00000002   Code   RO         3244    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080033d8   0x0000000e   Code   RO         3245    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x080033e6   0x00000002   PAD
-    0x080033e8   0x0000000c   Code   RO         3219    i.__set_errno       mc_w.l(errno.o)
-    0x080033f4   0x0000004a   Code   RO          176    i.cal_average_speed  main.o
-    0x0800343e   0x00000002   PAD
-    0x08003440   0x0000004a   Code   RO          177    i.cal_range_speed   main.o
-    0x0800348a   0x00000002   PAD
-    0x0800348c   0x00000054   Code   RO          178    i.cal_shoot_speed   main.o
-    0x080034e0   0x00000088   Code   RO          181    i.main              main.o
-    0x08003568   0x000009d8   Code   RO         3128    i.pow               m_ws.l(pow.o)
-    0x08003f40   0x0000004c   Code   RO         3192    i.sqrt              m_ws.l(sqrt.o)
-    0x08003f8c   0x00000010   Data   RO          456    .constdata          system_stm32f1xx.o
-    0x08003f9c   0x00000008   Data   RO          457    .constdata          system_stm32f1xx.o
-    0x08003fa4   0x00000012   Data   RO         1864    .constdata          stm32f1xx_hal_rcc.o
-    0x08003fb6   0x00001e10   Data   RO         2985    .constdata          oled.o
-    0x08005dc6   0x00000002   PAD
+    0x08003040   0x000000d4   Code   RO         2983    i.OLED_showspeed    oled.o
+    0x08003114   0x00000002   Code   RO          338    i.PendSV_Handler    stm32f1xx_it.o
+    0x08003116   0x00000002   Code   RO          339    i.SVC_Handler       stm32f1xx_it.o
+    0x08003118   0x00000004   Code   RO          340    i.SysTick_Handler   stm32f1xx_it.o
+    0x0800311c   0x0000005e   Code   RO          174    i.SystemClock_Config  main.o
+    0x0800317a   0x00000002   Code   RO          455    i.SystemInit        system_stm32f1xx.o
+    0x0800317c   0x0000000c   Code   RO          341    i.TIM1_BRK_IRQHandler  stm32f1xx_it.o
+    0x08003188   0x0000000c   Code   RO          342    i.TIM1_CC_IRQHandler  stm32f1xx_it.o
+    0x08003194   0x0000000c   Code   RO          343    i.TIM1_TRG_COM_IRQHandler  stm32f1xx_it.o
+    0x080031a0   0x0000000c   Code   RO          344    i.TIM1_UP_IRQHandler  stm32f1xx_it.o
+    0x080031ac   0x0000000c   Code   RO          345    i.TIM2_IRQHandler   stm32f1xx_it.o
+    0x080031b8   0x0000006c   Code   RO         2085    i.TIM_Base_SetConfig  stm32f1xx_hal_tim.o
+    0x08003224   0x00000014   Code   RO         2096    i.TIM_ETR_SetConfig  stm32f1xx_hal_tim.o
+    0x08003238   0x00000010   Code   RO         2097    i.TIM_ITRx_SetConfig  stm32f1xx_hal_tim.o
+    0x08003248   0x00000022   Code   RO         2103    i.TIM_TI1_ConfigInputStage  stm32f1xx_hal_tim.o
+    0x0800326a   0x00000024   Code   RO         2105    i.TIM_TI2_ConfigInputStage  stm32f1xx_hal_tim.o
+    0x0800328e   0x00000002   Code   RO          346    i.UsageFault_Handler  stm32f1xx_it.o
+    0x08003290   0x00000028   Code   RO         3186    i.__ARM_fpclassify  m_ws.l(fpclassify.o)
+    0x080032b8   0x00000020   Code   RO          729    i.__NVIC_SetPriority  stm32f1xx_hal_cortex.o
+    0x080032d8   0x000000aa   Code   RO         3188    i.__kernel_poly     m_ws.l(poly.o)
+    0x08003382   0x00000002   PAD
+    0x08003384   0x00000010   Code   RO         3172    i.__mathlib_dbl_divzero  m_ws.l(dunder.o)
+    0x08003394   0x00000004   Code   RO         3174    i.__mathlib_dbl_infnan2  m_ws.l(dunder.o)
+    0x08003398   0x0000000c   Code   RO         3175    i.__mathlib_dbl_invalid  m_ws.l(dunder.o)
+    0x080033a4   0x0000000e   Code   RO         3176    i.__mathlib_dbl_overflow  m_ws.l(dunder.o)
+    0x080033b2   0x00000002   PAD
+    0x080033b4   0x00000010   Code   RO         3178    i.__mathlib_dbl_underflow  m_ws.l(dunder.o)
+    0x080033c4   0x0000000e   Code   RO         3243    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080033d2   0x00000002   Code   RO         3244    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080033d4   0x0000000e   Code   RO         3245    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080033e2   0x00000002   PAD
+    0x080033e4   0x0000000c   Code   RO         3219    i.__set_errno       mc_w.l(errno.o)
+    0x080033f0   0x0000004a   Code   RO          176    i.cal_average_speed  main.o
+    0x0800343a   0x00000002   PAD
+    0x0800343c   0x0000004a   Code   RO          177    i.cal_range_speed   main.o
+    0x08003486   0x00000002   PAD
+    0x08003488   0x00000054   Code   RO          178    i.cal_shoot_speed   main.o
+    0x080034dc   0x00000088   Code   RO          181    i.main              main.o
+    0x08003564   0x000009d8   Code   RO         3128    i.pow               m_ws.l(pow.o)
+    0x08003f3c   0x0000004c   Code   RO         3192    i.sqrt              m_ws.l(sqrt.o)
+    0x08003f88   0x00000010   Data   RO          456    .constdata          system_stm32f1xx.o
+    0x08003f98   0x00000008   Data   RO          457    .constdata          system_stm32f1xx.o
+    0x08003fa0   0x00000012   Data   RO         1864    .constdata          stm32f1xx_hal_rcc.o
+    0x08003fb2   0x00001e10   Data   RO         2985    .constdata          oled.o
+    0x08005dc2   0x00000006   PAD
     0x08005dc8   0x00000088   Data   RO         3129    .constdata          m_ws.l(pow.o)
     0x08005e50   0x00000008   Data   RO         3190    .constdata          m_ws.l(qnan.o)
     0x08005e58   0x00000020   Data   RO         3241    Region$$Table       anon$$obj.o
@@ -1913,7 +1912,7 @@ Image component sizes
        112         12          0          0          0     426283   gpio.o
        260         38          0          0         84       2141   i2c.o
        708         76          0         41        204       8800   main.o
-      1590         84       7696          1       1152      10513   oled.o
+      1586         86       7696          1       1152      10505   oled.o
         36          8        236          0       1024        756   startup_stm32f103xb.o
        164         28          0         12          0       5813   stm32f1xx_hal.o
        232         14          0          0          0      29545   stm32f1xx_hal_cortex.o
@@ -1929,9 +1928,9 @@ Image component sizes
        352         24          0          0        144       2323   tim.o
 
     ----------------------------------------------------------------------
-     10930        568       8008         64       2612     541130   Object Totals
+     10926        570       8012         64       2612     541122   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        26          0          2          6          4          0   (incl. Padding)
+        26          0          6          6          4          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2002,9 +2001,9 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     16032        790       8152         68       2612     537030   Grand Totals
-     16032        790       8152         68       2612     537030   ELF Image Totals
-     16032        790       8152         68          0          0   ROM Totals
+     16028        792       8156         68       2612     537022   Grand Totals
+     16028        792       8156         68       2612     537022   ELF Image Totals
+     16028        792       8156         68          0          0   ROM Totals
 
 ==============================================================================
 
